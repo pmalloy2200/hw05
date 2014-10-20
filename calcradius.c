@@ -8,7 +8,7 @@ Inputs: Area, Perimeter
 #include <stdio.h>
 #include "geom.h"
 
-double radius(void)
+int main(void)
 {
 
 struct point2d a = {2., 2.};
@@ -20,7 +20,8 @@ double perim = perimeter(u);
 double ar = area(u);
 
 double rad = 2*ar/perim;
-return rad;
+printf("radius:  %f\n", rad);
+return 0;
 }
 
 
